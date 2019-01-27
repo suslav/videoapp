@@ -1,0 +1,23 @@
+$header-position: sticky;
+$header-width:100%;
+$header-z-index:99;
+$header-background: #000000;
+$header-color:white !important;
+.mat_head {
+    height: 67px;
+    position: $header-position;
+    left: 0;
+    top: 0;
+    width: $header-width;
+    z-index: $header-z-index;
+    color:$header-color;
+    background-color:$header-background;
+    }
+    .nav-link{
+        color:$header-color;
+    }
+    ul{
+        li{
+            color:white
+        }
+    }

@@ -1,0 +1,10 @@
+.modules{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;
+    .module{
+max-width: 100%;
+grid-column: 1/-1;
+    background: inherit;
+    }
+}
