@@ -5,6 +5,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { SongsComponent } from './songs/songs.component';
 import { ShowsComponent } from './shows/shows.component';
 import { ViewplanComponent } from './viewplan/viewplan.component';
+import{ FileuploadComponent} from './fileupload/fileupload.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'songs', component:SongsComponent},
   {path:'shows',component:ShowsComponent},
   {path:'viewplans', component:ViewplanComponent},
+  {path:'fileupload',component:FileuploadComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'}
 ];
 

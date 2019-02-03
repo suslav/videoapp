@@ -11,6 +11,8 @@ import { MoviesComponent } from './movies/movies.component';
 import { ShowsComponent } from './shows/shows.component';
 import { ViewplanComponent } from './viewplan/viewplan.component';
 import { SongsComponent } from './songs/songs.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { SongsComponent } from './songs/songs.component';
     MoviesComponent,
     ShowsComponent,    
     ViewplanComponent,
-    SongsComponent
+    SongsComponent,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    FormsModule,ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

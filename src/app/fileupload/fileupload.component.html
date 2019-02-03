@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class='col-sm-12'>&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <form class="md-form" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <div class="file-field">
+                    <div class="row">
+                        <div class='col-sm-2'>
+                                <label for="avatar">Video File Upload</label>
+                        </div>
+                        <div class="col-sm-4 filecontrls" >
+                                <input type="file" class="form-control" id="avatar" (change)="onFileChange($event)" #fileInput>
+                        </div>
+                        <div class="col-sm-3">
+&nbsp;
+                        </div>
+                        <div class="col-sm-2">
+                                <button type="submit" class="btn btn-success">Submit <i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i></button>
+                        </div>
+                    </div>
+                   
+                    <!-- <button type="button" class="btn btn-sm btn-default" (click)="clearFile()">clear file</button> -->
+                </div>
+               
+            </form>
+        </div>
+    </div>
+    <div class="row">
+            <div class='col-sm-12'>&nbsp;</div>
+        </div>
+</div>
